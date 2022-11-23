@@ -26,6 +26,10 @@ nav{
     align-items: center;
 }
 
+.burger-menu{
+    display: none;
+}
+
 
 
 a{
@@ -57,6 +61,19 @@ a{
 
 }
 
+
+.first-headline{
+    margin-bottom: 1rem;
+}
+
+.first-sub-headline{
+    margin-bottom: 2rem;
+
+}
+
+.services{
+    margin-bottom: 2rem;
+}
 @keyframes fadeaction {
     0%{opacity: 1;}
     100%{opacity: 0;}
@@ -68,8 +85,11 @@ a{
 
 .hero{
     width: 100%;
-    height: 50vh;
-    margin-top: 5rem ;
+   min-height: 0vh;
+    margin: 0rem 4rem;
+    
+    
+
     
     text-align: center;
     
@@ -103,12 +123,17 @@ a{
 .hero-btn-two{
      
     
-    
+    padding: .7rem; 
+    border-radius: 10px;
+    background: none;
     border: none;
+    color: white;
+    cursor: pointer;
+    
 }
 
 .second-section-container{
-    height: 80vh;
+    height: 70%;
     width: 100%;
     background-color: rgba(245, 242, 255, 1);
 }
@@ -117,8 +142,10 @@ a{
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 1rem;
-   height: 100%;
+   margin:0rem;
+
+  min-height: 0vh;
+   
 
 }
 
@@ -153,20 +180,30 @@ a{
 }
 
 .four-section-container{
-    
-    height: 60vh ;
+    display: flex;
+    justify-content: center;
+    height: 100% ;
     width: 100%;
     background-color: rgba(245, 242, 255, 1);
-    margin-top: 10rem;
-    margin-bottom: 15rem;
+    margin-bottom: 2rem;
+    width: 100vw;
+    
+  
+    
+    
+    
 }
 
 .four-squares{
     display: flex;
-    height: 100%;
+    width: 90vw;
+    min-height: 0vh;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    margin: 0rem 2rem;
+    
+    
     
    
     
@@ -177,7 +214,7 @@ a{
     width: 20%;
     height: auto;
     background-color: white;
-    margin-bottom: 7rem;
+    
     padding: 5px;
     
     
@@ -199,18 +236,20 @@ a{
 
 .fifth-container{
     width: 100%;
-    height:110vh ;
+    min-height:0vh ;
     background-color:rgba(245, 242, 255, 1); 
-    margin: auto auto 15rem auto;
+    margin: auto auto 4rem auto;
+    
    
    
 }
 
 .first-flex-this{
 width: 80%;
-height: 80vh;
+min-height: 0vh;
 margin: auto auto 3rem auto;
 display: flex;
+
 
 
 
@@ -230,9 +269,11 @@ display: flex;
 
 .flex-this{
     display: flex;
+    min-height: 0vh;
     gap: 2rem;
     background-color: white;
     padding: 5px;
+  
 
     
 }
@@ -240,26 +281,31 @@ display: flex;
 
 
 .short-one{
-    height: auto;
+    min-height: 0vh;
     width: 30%;
    
     margin-left: 3.2rem;
-    margin-bottom: 0rem ;
+   
   
 }
 .six-container{
     width: 100%;
-    height: 40vh;
+    min-height: 0vh;
     background-color: rgba(4, 0, 190, 1) ;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 3rem 0rem;
 }
 .six-main-container{
   text-align: center;
     width: 80%;
-    height: 20vh;
+    min-height: 0vh;
     color: white;
+    margin-right: 15rem;
+    padding: 2rem 0;
 }
 
 .last-btn{
@@ -278,21 +324,49 @@ display: flex;
     
 
 }
+footer{
+    
+    min-height: 0vh;
+    padding: 3rem 0rem;
+    background-color: rgb(44, 43, 43);
+}
 
 .footer-main-container{
-    width: 100%;
-    height: 40vh;
+    width: 90%;
+    min-height: 0vh;
     display: flex;
+    padding: 1rem 0rem;
+    
+    margin-top: -3rem;
+    margin-left: -2rem;
+
+   
+    color: white;
+    
+    
 
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem;
+}
+
+.footer-main-container div{
+    
+   min-height: 100%;
+   padding: .2rem;
 }
 
 .socials{
     display: flex;
-    gap: 2rem;
+   
+}
+
+@media (max-width: 1024px) {
+    .six-main-container{
+            
+        margin-right: 4rem;}
+    
 }
 
 
@@ -304,45 +378,62 @@ display: flex;
         position: relative;
        }
     header{
-        justify-content: space-evenly;
-        align-items: center;
+        justify-content: space-around;
+        
     }
+    
+    #first-btn{
+        display: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     .second-section-container{
         
         width: 100vw;
+        margin: 0rem 0rem;
+        height: 100%;
     }
 
     .second-section{
         display: flex;
-        justify-content: flex-start;
-        align-items: none;
-        gap: 1rem;
-        height: 100%;
-        width: 100%;
+        flex-direction: column;
+        
+        
      
      }
+
+     .box-one{
+        width: 80%;
+       height: 40%;
+        
+        
+    }
+    .two-one{
+       width: 60%;
+        height: 40%;
+    }
      
+    #fix{
+        margin-top: 0rem;
+    }
 
     .first-flex-this{
         width: 100%;
         height: 80vh;
-        margin: auto auto 3rem auto;
+       
         display: flex;
         gap: 3rem;
         
         
         
         }
-    .intro-fifth{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-       
-        background-color: white;
-        padding: 5px;
-    }
+   
     
 
     .second-section{
@@ -354,15 +445,22 @@ display: flex;
      
      }
 
-     .second-section-container{
-        margin-top: 7rem;
-        margin-bottom: 5rem;
-     }
+    
 
      .four-section-container{
-        margin-top: 11rem;
-        margin-bottom: 5rem;
+       margin-top: 2rem;
+       height: 100%;
+       width: 100%;
+       
      }
+
+     .four-squares{
+        margin-top: 0rem;
+        
+        
+        
+        
+    }
 
      .first-flex-this{
         width: 100%;
@@ -387,33 +485,75 @@ display: flex;
         }
         
         .fifth-container{
-            width: 100%;
-            height:90vh ;
+            width: 85vw;
+            min-height:0vh ;
             background-color:rgba(245, 242, 255, 1); 
-            margin: auto auto 38rem auto;
+            
            
            
+        }
+
+        .intro-fifth{
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0rem;
+            background-color: white;
+            padding: 5px;
+            min-height: 0vh;
+            min-width: 0vw;
+            
         }
 
         .short-one{
             height: auto;
             width: 30%;
-           margin-top: 35rem;
+       
             margin-left: 3.2rem;
+           
            
            
         }
         
         .six-container{
-            margin-top: 50rem;
+            margin-top: 0rem;
             
         }
+
+
+        .six-main-container{
+            
+            margin-right: 4rem;}
+
+        
+    .footer-main-container{
+            
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0rem;
+        
+        margin-top: 3rem;
+        margin-left: 1rem;
+    
+       
+        color: white;
+        
+        
+    
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+            
 
 }
 
 
 
-@media screen and (max-width: 560px){
+@media screen and (max-width: 760px){
     body, html{
         overflow-x: hidden;
         position: relative;
@@ -462,30 +602,20 @@ display: flex;
         transform: translateX(0%)
        }
 
-
-       .four-section-container{
-        margin-top: 35rem;
-        margin-bottom: 35rem;
-        
-     }
-
-
        .four-squares{
         display: flex;
         flex-direction: column;
         
         
         
-    }
-    .second-section-container{
-        margin-bottom: 15rem;
         
     }
+    
     .div{
         width: auto;
         height: auto;
         background-color: none;
-        margin-top: -6.5rem;
+        
         padding: 5px;
         
         
@@ -494,104 +624,55 @@ display: flex;
     }
 
 
-    .first-flex-this{
-        width: auto;
-        height: auto;
-        margin: auto auto 3rem auto;
-        display: flex;
-        flex-direction: column;
-        
-        
-        
-        
-        }
 
-        .flex-this{
-            display: flex;
-            flex-direction: column;
-           
-          
-        
-            
-        }
-        
-        .fifth-container{
-            width: 100%;
-            height:90vh ;
-            background-color:rgba(245, 242, 255, 1); 
-            margin: auto auto 38rem auto;
-           
-           
-        }
-
+       
         
 
-        .short-one{
-            height: auto;
-            width: auto;
-           
-            margin-left: 3.2rem;
-            margin-top: 5rem;
-            margin-bottom: 10rem ;
-            
-        }
-
-        .intro-fifth{
-    
-            display: block;
-            width: 100%;
-            background-color: none;
-            margin-top: 5rem;
-            margin-bottom: 2rem;
-            padding: 5px;
-            
-           
-        }
-
-        .second-side{
-            margin-bottom: 2rem;
-            
-        }
-
-        .six-container{
-            width: 100%;
-            height: 40vh;
-            background-color: rgba(4, 0, 190, 1) ;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 75rem;
-            margin-bottom: 10rem;
-            
-        }
-
-        .six-main-container{
-            text-align: center;
-              width: 80%;
-              height: auto;
-              color: white;
-             
-          }
-
-          .footer-main-container{
-            width: 100%;
-            height: 40vh;
-            display: flex;
-            padding: 5px;
-        
-            justify-content: flex-start;
-            align-items: center;
-            flex-wrap: wrap;
-            overflow: hidden;
-           
-        }
 
 }
 
 @media screen and (max-width: 460px){
 
-    .second-section-container{
-        margin-bottom: 30rem;
-        
+
+    .first-headline{
+        margin-bottom: 1rem;
     }
+
+    .first-sub-headline{
+        margin-bottom: 2rem;
+
+    }
+
+    .services{
+        margin-bottom: 2rem;
+    }
+    
+    
+    .short-one{
+        min-height: 0vh;
+       min-width: 50vw;
+       
+        margin-left: 3.2rem;
+       
+      
+    }
+
+    .six-main-container{
+            
+        margin-right: 1rem;}
+
+
+        .burger-menu > div{
+            width: 30px;
+            height: 3.5px;
+            background-color: white;
+            margin-top: 0.5rem;
+            border-radius: 10px;
+           
+          
+        }
+
+       
+    
+    
 }
